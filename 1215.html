@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="1215.css">
+</head>
+<body>
+
+    <h1>Interactive Buttons</h1> 
+
+  <script>
+   
+
+    var input1=window.prompt('Enter first integer');
+    var input2=window.prompt('Enter second integer');
+    if(input1>input2){
+        document.body.style.backgroundColor='lightblue';
+        document.writeln(input1+" > "+input2); 
+    }else if(input2>input1){
+        document.body.style.backgroundColor='orange';
+        document.writeln(input2+" > "+input1);
+    }else if(input1==input2){
+        document.body.style.backgroundColor='lightyellow';
+        document.writeln(input1+" == "+input2);
+    }
+   
+    
+  </script>
+  <div class="button-container">
+    <input type="button" id="alertButton1" value="1st button" onClick="alert(input1)">
+    <input type="button" id="alertButton2" value="2nd button" onClick="alert(input2)">
+   
+   
+  </div>
+
+
+
+  <!-- Your page content goes here -->
+
+</body>
+</html>
